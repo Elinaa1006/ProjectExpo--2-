@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="1312.0" style="-fx-background-color: bor;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TampilanAwal.controller1">
+   <children>
+      <BorderPane layoutX="-18.0" layoutY="-114.0" prefHeight="954.0" prefWidth="1359.0" style="-fx-background-color: #006064;" AnchorPane.topAnchor="-114.0" />
+      <Label layoutX="811.0" layoutY="75.0" prefHeight="126.0" prefWidth="426.0" text="WELCOME!" textFill="#df8e14">
+         <font>
+            <Font name="Tahoma Bold" size="77.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="922.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="masuk sebagai">
+         <font>
+            <Font name="Marlett" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdministrator" layoutX="864.0" layoutY="394.0" mnemonicParsing="false" onAction="#pindahAdministrator" onMouseClicked="#pindahslide" prefHeight="68.0" prefWidth="293.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-background-color: #ff8f00;" text="Administrator">
+         <font>
+            <Font name="Tahoma Bold" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPembeli" layoutX="868.0" layoutY="499.0" mnemonicParsing="false" onAction="#pindahPembeli" onMouseClicked="#pindahslide" prefHeight="68.0" prefWidth="293.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-background-color: #ff8f00;" text="Pembeli">
+         <font>
+            <Font name="Tahoma Bold" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKontributor" layoutX="865.0" layoutY="289.0" mnemonicParsing="false" onAction="#pindahKontributor" onMouseClicked="#pindahslide" prefHeight="68.0" prefWidth="293.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-background-color: #ff8f00;" text="Kontributor">
+         <font>
+            <Font name="Tahoma Bold" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDaftar" layoutX="1064.0" layoutY="585.0" mnemonicParsing="false" onAction="#pindahDaftar" onMouseClicked="#pindahslide" prefHeight="37.0" prefWidth="96.0" style="-fx-background-color: #006064; -fx-background-radius: 10;" text="Daftar" textFill="#ff8f00" AnchorPane.leftAnchor="1050.0" AnchorPane.topAnchor="577.0">
+         <font>
+            <Font name="Tahoma Bold" size="19.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="866.3729492187487" layoutY="605.9249999999989" strokeType="OUTSIDE" strokeWidth="0.0" text="Belum memiliki akun?" AnchorPane.topAnchor="585.0">
+         <font>
+            <Font name="Marlett" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="999.0" fitWidth="723.0" layoutX="-18.0" layoutY="-193.0" style="-fx-opacity: 25%;">
+         <image>
+            <Image url="@../img/Rebuilding%20Lombok%20after%20earthquakes%20with%20earthbags%20and%20eco%20bricks.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="637.0" fitWidth="644.0" layoutX="22.0" layoutY="-10.0">
+         <image>
+            <Image url="@../img/....png" />
+         </image>
+         <effect>
+            <DropShadow height="23.34" radius="8.83" spread="0.11" width="13.98">
+               <input>
+                  <Lighting diffuseConstant="1.05" specularConstant="0.65" specularExponent="40.0" surfaceScale="2.0">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.0736842080950737" green="0.0736842080950737" blue="0.0736842080950737" />
+                           </color>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="272.89" elevation="48.3" />
+                     </light>
+                  </Lighting>
+               </input>
+               <color>
+                  <Color red="0.8526315689086914" green="0.8368421196937561" blue="0.8368421196937561" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="74.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubah Sampah Plastik Menjadi Barang yang Berguna !">
+         <font>
+            <Font name="Wingdings 2" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow radius="35.735" spread="0.02" width="123.94" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="225.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#RecycleReduseReuse">
+         <font>
+            <Font name="Wingdings" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="58.43" radius="19.3575" spread="0.5" />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

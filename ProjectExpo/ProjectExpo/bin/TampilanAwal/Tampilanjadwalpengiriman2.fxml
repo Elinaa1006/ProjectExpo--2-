@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="374.0" layoutY="74.0" prefHeight="88.0" prefWidth="535.0" style="-fx-background-color: #ff8f00; -fx-background-radius: 30;" />
+      <Text layoutX="476.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Jadwal" wrappingWidth="358.76263427734375">
+         <font>
+            <Font name="Tahoma Bold" size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="1069.0" layoutY="615.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #006064; -fx-background-radius: 10;" text="OKE">
+         <font>
+            <Font name="Tahoma Bold" size="23.0" />
+         </font>
+      </Button>
+      <Text layoutX="365.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tetapkan Jadwal Pengambilan" wrappingWidth="553.0">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="380.0" layoutY="290.0" prefHeight="43.0" prefWidth="521.0" />
+   </children>
+</AnchorPane>

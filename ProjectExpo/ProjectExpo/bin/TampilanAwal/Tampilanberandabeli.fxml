@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TampilanAwal.controllerPembelian">
+   <children>
+      <ImageView fitHeight="328.0" fitWidth="392.0" layoutX="-60.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Screenshot_2023-06-25_150040-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="50.0" prefHeight="620.0" prefWidth="300.0" style="-fx-background-color: #006064; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="btnKeluar" layoutX="154.0" layoutY="559.0" mnemonicParsing="false" onAction="#pindahAwal" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #ff8f00; -fx-background-radius: 10;" text="Keluar">
+               <font>
+                  <Font name="Tahoma Bold" size="23.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="206.0" layoutX="52.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/images-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="14.0" layoutY="221.0" prefHeight="59.0" prefWidth="358.0">
+               <children>
+                  <Button fx:id="btnProfilPembeli" layoutX="59.0" layoutY="7.0" mnemonicParsing="false" onAction="#pindahProfilPembeli" prefHeight="45.0" prefWidth="149.0" style="-fx-background-color: #006064;" text="USERNAME">
+                     <font>
+                        <Font name="Tahoma Bold" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="3.0" layoutY="299.0" prefHeight="69.0" prefWidth="357.0">
+               <children>
+                  <Button fx:id="btnDataBeli" layoutX="82.0" layoutY="9.0" mnemonicParsing="false" onAction="#pindahDataBeli" prefHeight="50.0" prefWidth="254.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Data Ecobrick">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="238.0" fitWidth="204.0" layoutX="485.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/IMG_20181121_172901-01.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="220.0" fitWidth="222.0" layoutX="719.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/c5877ddfbafacffa086cb451f6129830.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="179.0" layoutX="1024.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/S0288e8644f83416bb9aae9bc71a22022t.jpg_720x720q80.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="442.0" layoutY="627.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Harga :">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="1110.0" layoutY="655.0" mnemonicParsing="false" style="-fx-background-color: #ff8f00;" text="TRANSAKSI">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Button>
+      <Spinner fx:id="spinnerKecil" layoutX="500.0" layoutY="342.0" />
+      <Spinner fx:id="spinnerSedang" layoutX="754.0" layoutY="342.0" />
+      <Spinner fx:id="spinnerBesar" layoutX="1030.0" layoutY="342.0" />
+      <Text layoutX="445.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-bounds-type: black;" text="Kecil" wrappingWidth="64.591796875">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="445.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang" wrappingWidth="106.9918212890625">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="445.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Besar" wrappingWidth="74.40000000000009">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="jumlahBeliKecil" layoutX="623.0" layoutY="455.0" prefHeight="30.0" prefWidth="65.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="jumlahBeliSedang" layoutX="623.0" layoutY="500.0" prefHeight="30.0" prefWidth="65.0" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="jumlahBeliBesar" layoutX="623.0" layoutY="544.0" prefHeight="30.0" prefWidth="65.0" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="605.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-bounds-type: black;" text="Jumlah" wrappingWidth="65.59999999999991">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="809.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-bounds-type: black;" text="Harga" wrappingWidth="65.59999999999991">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="hargaBeliKecil" layoutX="803.0" layoutY="455.0" prefHeight="30.0" prefWidth="195.0" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="hargaBeliSedang" layoutX="803.0" layoutY="500.0" prefHeight="30.0" prefWidth="195.0" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="hargaBeliBesar" layoutX="803.0" layoutY="544.0" prefHeight="30.0" prefWidth="195.0" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalHargaBeli" layoutX="793.0" layoutY="604.0" prefHeight="30.0" prefWidth="157.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalJumlahBeli" layoutX="623.0" layoutY="605.0" prefHeight="30.0" prefWidth="80.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="438.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masukan berapa banyak ecobrick yang akan anda beli. Secara otomatis akan tercatat, jika ingin melanjutkan pembelian tekan tombol &quot;TRANSAKSI&quot;" wrappingWidth="455.4833984375">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="541.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-bounds-type: black;" text="Kecil" wrappingWidth="64.591796875">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="788.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang" wrappingWidth="89.9251708984375">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="1069.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Besar" wrappingWidth="74.40000000000009">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="527.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pilih jumlah disini" wrappingWidth="97.78564453125">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="780.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pilih jumlah disini" wrappingWidth="97.78564453125">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1053.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pilih jumlah disini" wrappingWidth="97.78564453125">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="427.60003662109375" endY="-3.0517578125E-5" layoutX="574.0" layoutY="492.0" startX="1.20001220703125" startY="-3.0517578125E-5" />
+      <Line endX="427.60003662109375" endY="-3.0517578125E-5" layoutX="574.0" layoutY="536.0" startX="1.20001220703125" startY="-3.0517578125E-5" />
+      <Line endX="427.60003662109375" endY="-3.0517578125E-5" layoutX="574.0" layoutY="581.0" startX="1.20001220703125" startY="-3.0517578125E-5" />
+      <Line endX="110.800048828125" endY="-3.0517578125E-5" layoutX="568.0" layoutY="432.0" startX="32.4000244140625" startY="-3.0517578125E-5" />
+      <Line endX="101.800048828125" endY="-3.0517578125E-5" layoutX="769.0" layoutY="432.0" startX="32.4000244140625" startY="-3.0517578125E-5" />
+   </children>
+</AnchorPane>
