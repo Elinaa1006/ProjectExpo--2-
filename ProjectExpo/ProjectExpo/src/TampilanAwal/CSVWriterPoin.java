@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class CSVWriterPoin {
 
     public void simpanData(ArrayList<poin> dataPoin) {
-        String csvFile = "C:/Users/acer/OneDrive/Documents/Informatika semester 1/Funfor/ProjectExpo (2)/ProjectExpo (2)/ProjectExpo/ProjectExpo/src/TampilanAwal/Poin.csv";
+        String csvFile = "C:\\Users\\acer\\OneDrive\\Pictures\\ProjectExpo (2)\\ProjectExpo (2)\\ProjectExpo\\ProjectExpo\\src\\TampilanAwal\\Poin.csv";
         String delimiter = ";"; // Pemisah dalam file CSV
 
         // Menghapus isi file CSV yang sudah ada

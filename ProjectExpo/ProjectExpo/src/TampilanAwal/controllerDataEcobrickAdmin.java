@@ -13,6 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -24,7 +26,7 @@ import javafx.stage.Stage;
 import static javafx.collections.FXCollections.observableArrayList;
 
 public class controllerDataEcobrickAdmin implements Initializable{
-    ObservableList <dataEcobrick> data =  observableArrayList(new dataEcobrick("Kecil", "100","2023-5-7"),(new dataEcobrick("Sedang", "500", "2023-6-1")));
+    ObservableList <dataEcobrick> data =  observableArrayList();
     
 
     private Stage stage;
@@ -71,6 +73,11 @@ public class controllerDataEcobrickAdmin implements Initializable{
 
     @FXML
     private TableColumn<dataEcobrick, String> ukuranTambahData;
+
+    @FXML
+    private BarChart<String, Integer> chart;
+    
+    XYChart.Series <String,Integer> diagram = new XYChart.Series();
 
     
     public void pindahDataEcobrick(ActionEvent event) throws IOException {
@@ -150,7 +157,20 @@ public class controllerDataEcobrickAdmin implements Initializable{
   
         tabelTambahData.setItems(data);
 
- 
+        // Membaca data dari tabel dan menambahkannya ke dalam series diagram
+        for (dataEcobrick entry : tabelTambahData.getItems()) {
+            String tanggal = entry.getTanggal();
+            int jumlah = Integer.parseInt(entry.getJumlah());
+            diagram.getData().add(new XYChart.Data<>(tanggal, jumlah));
+        }
+
+        // Menambahkan series diagram ke dalam bar chartS
+        chart.getData().add(diagram);
+
+        chart.getXAxis().setLabel("Tanggal");
+        chart.getYAxis().setLabel("Jumlah");
+
+        diagram.setName("Jumlah Ecobrick  per Tanggal");
     }
 
 }

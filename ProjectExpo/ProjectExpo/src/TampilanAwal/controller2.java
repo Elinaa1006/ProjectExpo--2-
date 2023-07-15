@@ -29,8 +29,7 @@ import static javafx.collections.FXCollections.observableArrayList;
 
 
 public class controller2 implements Initializable{
-    ObservableList <dataEcobrick> data =  observableArrayList(new dataEcobrick("Kecil", "100","2023-5-7"),(new dataEcobrick("Sedang", "500", "2023-6-1")));
-    
+    ObservableList <dataEcobrick> data =  observableArrayList();
 
     private Stage stage;
     

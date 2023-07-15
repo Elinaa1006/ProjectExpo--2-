@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class CSVReaderPoin {
 
     public ArrayList<poin> readCSVFile(){
-        String csvFile = "ProjectExpo//ProjectExpo//src//TampilanAwal//Poin.csv"; // Ganti dengan path file CSV yang ingin Anda baca
+        String csvFile = "ProjectExpo\\ProjectExpo\\src\\TampilanAwal\\Poin.csv"; // Ganti dengan path file CSV yang ingin Anda baca
         String delimiter = ";"; // Pemisah dalam file CSV
 
         ArrayList<poin> poinList = new ArrayList<>();
